@@ -9,9 +9,6 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: cmd/gh-reply
     steps:
       - uses: actions/checkout@v2
       - uses: cli/gh-extension-precompile@v1
